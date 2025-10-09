@@ -18,8 +18,8 @@ export default function Navbar() {
       path: "/cart",
     },
     {
-      label: "Whishlist",
-      path: "/whishlist",
+      label: "Wishlist",
+      path: "/wishlist",
     },
   ];
   return (
