@@ -18,12 +18,12 @@ export default function CartOffset() {
   return (
     <div>
       <button
-        className="bg-lime-100 h-10 w-10 flex justify-center items-center rounded-full hover:bg-lime-300 cursor-pointer transition-all duration-300 ease-linear relative"
+        className="bg-lime-100 w-7 h-7 sm:h-10 sm:w-10 flex justify-center items-center rounded-full hover:bg-lime-300 cursor-pointer transition-all duration-300 ease-linear relative"
         onClick={() => {
           setOpen(true);
         }}
       >
-        <span className="bg-lime-400 text-xs absolute -top-1 right-1 h-4 w-4 flex items-center justify-center rounded-full">
+        <span className="bg-lime-400 text-xs absolute -top-1 sm:top-[5px] right-1 h-4 w-4 flex items-center justify-center rounded-full">
           {cartItems.length}
         </span>
         <RiShoppingBagLine />

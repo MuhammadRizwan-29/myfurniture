@@ -4,9 +4,9 @@ import { FaSquareInstagram, FaSquareXTwitter } from "react-icons/fa6";
 export default function Footer() {
   return (
     <footer className="bg-gray-100 ">
-      <div className="w-10/12 mx-auto">
-        <div className="w-full h-full flex justify-center items-start gap-4">
-          <div className="basis-[40%]">
+      <div className="px-2 sm:w-10/12 mx-auto">
+        <div className="w-full h-full flex justify-center flex-wrap items-start gap-0 sm:gap-4">
+          <div className="basis-[100%] sm:basis-[40%]">
             <h1 className="logo font-bold text-2xl">Furniture</h1>
             <p className="text-sm text-gray-500 italic py-3">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
@@ -15,7 +15,7 @@ export default function Footer() {
               adipisci non atque nesciunt ipsum!
             </p>
           </div>
-          <div className="basis-[20%]">
+          <div className="basis-[50%] sm:basis-[20%]">
             <h1 className="text-xl font-bold py-2">Quick Links</h1>
             <ul className="flex-1">
               <li className="font-bold hover:text-lime-400 cursor-pointer">
@@ -32,7 +32,7 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-          <div className="basis-[20%]">
+          <div className="basis-[50%] sm:basis-[20%]">
             <h1 className="text-xl font-bold py-2">Terms & Conditions</h1>
             <ul className="flex-1">
               <li className="font-bold hover:text-lime-400 cursor-pointer">
@@ -43,7 +43,7 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-          <div className="basis-[20%]">
+          <div className="basis-[100%] sm:basis-[20%]">
             <h1 className="text-xl font-bold py-2">Social Links</h1>
             <ul className="flex items-center gap-4 text-2xl w-fit">
               <li className="font-bold">
@@ -64,14 +64,14 @@ export default function Footer() {
             </ul>
           </div>
         </div>
-        <div className="flex justify-between items-center mx-auto mt-3 py-3 border-t border-gray-600">
-          <h4 className="flex items-center gap-2">
+        <div className="flex flex-col-reverse sm:flex-row justify-between items-center mx-auto mt-3 py-3 border-t border-gray-600">
+          <h4 className="flex items-center gap-2 mt-4 sm:mt-0">
             <FaRegCopyright /> All rights resereved Furniture 2025.
           </h4>
           <img
             src="/img/card.png"
             alt="card"
-            className="w-full h-full max-w-[200px]"
+            className="w-full h-full max-w-[200px] mt-4 sm:mt-0"
           />
         </div>
       </div>

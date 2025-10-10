@@ -35,15 +35,15 @@ export default function ProductCard({ product }) {
               isInCart
                 ? "bg-gray-200 hover:bg-gray-400"
                 : "bg-lime-200 hover:bg-lime-400"
-            } py-2 cursor-pointer transition-all duration-500 ease-in-out`}
+            } py-2 cursor-pointer transition-all duration-500 ease-in-out text-xs sm:text-sm`}
           >
             {isInCart ? "Item in Cart" : "Add to Cart"}
           </button>
         </div>
-        <div className="p-2 text-xl flex flex-col absolute top-2 -right-20 group-hover:right-2 gap-3  transition-all duration-500 ease-in-out">
+        <div className="p-2 text-xl flex flex-col absolute top-2 -right-20 group-hover:right-2 gap-1 sm:gap-3  transition-all duration-500 ease-in-out">
           <button
             onClick={handleAddToWishList}
-            className={`p-3 rounded-full cursor-pointer ${
+            className={`p-1.5 sm:p-3 rounded-full cursor-pointer ${
               isInWishlist
                 ? "bg-red-500 text-white"
                 : "bg-lime-200 hover:bg-lime-400"
@@ -51,15 +51,17 @@ export default function ProductCard({ product }) {
           >
             <FaRegHeart />
           </button>
-          <button className="bg-lime-200 hover:bg-lime-400 p-3 rounded-full cursor-pointer">
+          <button className="bg-lime-200 hover:bg-lime-400 p-1.5 sm:p-3 rounded-full cursor-pointer">
             <FaRegEye />
           </button>
         </div>
       </div>
       <div className="py-3">
         <div className="flex justify-between items-center">
-          <h1 className="font-bold">{product.name}</h1>
-          <h4 className="font-bold text-lime-500">{product.price}</h4>
+          <h1 className="text-sm sm:font-bold">{product.name}</h1>
+          <h4 className="text-sm sm:font-bold text-lime-500">
+            {product.price}
+          </h4>
         </div>
       </div>
     </div>

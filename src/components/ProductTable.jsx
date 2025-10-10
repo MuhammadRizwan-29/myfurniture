@@ -23,7 +23,7 @@ export default function ProductTable() {
 
   return (
     <section>
-      <div className="w-10/12 mx-auto py-3 min-h-[60vh]">
+      <div className="px-2 sm:w-10/12 mx-auto py-3 min-h-[60vh]">
         <h1 className="text-center text-xl font-bold py-3">My Cart</h1>
         <table className="w-full h-full mt-5">
           <thead className="bg-gray-300">

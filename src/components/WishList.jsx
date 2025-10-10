@@ -17,7 +17,7 @@ export default function WishList() {
   return (
     <div>
       <button
-        className="bg-lime-100 h-10 w-10 flex justify-center items-center rounded-full hover:bg-lime-300 cursor-pointer transition-all duration-300 ease-linear relative"
+        className="bg-lime-100 w-7 h-7 sm:h-10 sm:w-10 flex justify-center items-center rounded-full hover:bg-lime-300 cursor-pointer transition-all duration-300 ease-linear relative"
         onClick={() => {
           setOpen(true);
         }}

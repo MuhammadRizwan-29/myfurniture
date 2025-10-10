@@ -13,12 +13,12 @@ export default function Categories() {
     <section>
       <SectionTitle content="Discover Our Featured Products" />
       <div className="w-10/12 mx-auto px-2">
-        <div className="w-full grid grid-cols-8 gap-3 py-5 px-2">
+        <div className="w-full flex items-center justify-center flex-wrap gap-3 py-5 px-2">
           {data.map((category, index) => {
             return (
               <div
                 key={index}
-                className="flex flex-col w-32 h-32 justify-center items-center p-3 rounded-full bg-lime-200"
+                className="flex flex-col w-32 h-32 justify-center items-center p-3 rounded-full bg-lime-200 hover:bg-lime-400 transition-all duration-150 ease-in-out cursor-pointer"
               >
                 <img
                   src={category.image}

@@ -47,10 +47,10 @@ const cartSlice = createSlice({
       if (existingItem) {
         const priceDiff =
           existingItem.price * (quantity - existingItem.quantity);
-        existingItem.quantity = quantity;
-        existingItem.totalPrice = existingItem.price * quantity;
         state.totalAmount += priceDiff;
         state.totalQuantity += quantity - existingItem.quantity;
+        existingItem.quantity = quantity;
+        existingItem.totalPrice = existingItem.price * quantity;
       }
     },
   },

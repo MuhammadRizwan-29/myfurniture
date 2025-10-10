@@ -7,7 +7,7 @@ export default function FeaturedProducts({ currentPage, products }) {
     <section>
       <SectionTitle content="Discover Our Featured Products" />
       <div className="w-10/12 mx-auto py-3">
-        <div className="grid grid-cols-3 gap-4">
+        <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 sm:gap-4">
           {products.map((product) => {
             return (
               <div key={product.id}>

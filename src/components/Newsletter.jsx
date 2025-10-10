@@ -1,9 +1,9 @@
 export default function NewsLetter() {
   return (
     <section className="my-8">
-      <div className="w-10/12 mx-auto px-2 py-8 flex flex-col items-center bg-gray-200">
+      <div className="sm:w-10/12 mx-auto px-2 py-8 flex flex-col items-center bg-gray-200">
         <div className="max-w-md w-full">
-          <h1 className="py-5 font-bold text-3xl">
+          <h1 className="pt-0 sm:pt-5 pb-5 font-bold text-center sm:text-left text-xl sm:text-3xl">
             Subscribe for Exclusive Updates
           </h1>
           <div className="w-full">

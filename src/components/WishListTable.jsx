@@ -12,7 +12,7 @@ export default function WishListTable() {
 
   return (
     <section>
-      <div className="w-10/12 mx-auto py-3 min-h-[60vh]">
+      <div className="px-2 sm:w-10/12 mx-auto py-3 min-h-[60vh]">
         <h1 className="text-center text-xl font-bold py-3">My Wishlist</h1>
         <table className="w-full h-full mt-5">
           <thead className="bg-gray-300">
@@ -50,16 +50,6 @@ export default function WishListTable() {
               </tr>
             )}
           </tbody>
-          {/* <tfoot className="bg-gray-300 w-full">
-            <tr className="w-full">
-              <td className="p-3" colSpan={2}>
-                <b>Total Quantity:</b> {totalQuantity}
-              </td>
-              <td className="p-3 text-right" colSpan={3}>
-                <b>Total Amount:</b> $ {totalAmount}
-              </td>
-            </tr>
-          </tfoot> */}
         </table>
       </div>
     </section>

@@ -17,14 +17,11 @@ export default function HomeSlider() {
   }, []);
   return (
     <section>
-      <div className="w-10/12 mx-auto px-2">
+      <div className=" sm:w-10/12 mx-auto px-2">
         <Swiper
           slidesPerView={1}
           spaceBetween={30}
           loop={true}
-          // pagination={{ clickable: true }}
-          // navigation={true}
-          // modules={[Navigation, Pagination]}
           className="myswiper"
         >
           {slides.heroSlider.map((slide) => {
@@ -35,15 +32,15 @@ export default function HomeSlider() {
                   alt={`Slide ` + slide.id}
                   className="w-full"
                 />
-                <div className="text_container absolute top-[38%] text-center w-full h-full">
-                  <h1 className="font-bold text-5xl text-slate-800">
+                <div className="text_container absolute top-[20%] sm:top-[38%] text-center w-full h-full">
+                  <h1 className="font-bold text-xl sm:text-5xl text-slate-800">
                     {slide.title}
                   </h1>
-                  <p className="text-sm italic py-3 text-gray-100">
+                  <p className="text-sm italic py-1 sm:py-3 text-gray-100">
                     {slide.subtitle}
                   </p>
                   <Link to={slide.link}>
-                    <button className="font-bold bg-lime-400 hover:bg-lime-600 px-5 py-3 text-sm transition ease-in duration-150 cursor-pointer">
+                    <button className="text-xs sm:text-sm sm:font-bold bg-lime-400 hover:bg-lime-600 px-2.5 sm:px-5 py-1.5 sm:py-3 transition ease-in duration-150 cursor-pointer">
                       {slide.buttonText}
                     </button>
                   </Link>
